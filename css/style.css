@@ -1,0 +1,225 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  background-image: url("img/background-main.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  }
+header {
+  background-image: url("img/grey-back.jpg");
+  background-position: 0 0 ;
+  background-repeat: no-repeat;
+}
+li{
+  list-style: none;
+}
+nav {
+  font-size: 16px;
+  color: #000000;
+  background-color: #ffffff;
+  letter-spacing: 0;
+  line-height: 30px;
+  text-decoration: none;
+  }
+a {
+  text-decoration: none;
+}
+.main-navigation a {
+  color: #000000;
+  background-color: #ffffff;
+}
+.main-navigation a:hover {
+  color: #fb565a;
+  background-color: #ffffff;
+}
+.main-navigation a:focus {
+  text-decoration:underline;
+  color: #000000;
+  text-decoration-color: #fb565a;
+}
+.main-navigation a:active{
+  color: #000000;
+  opacity: 0.3;
+}
+.logo-header:hover {
+  opacity: 0.8;
+}
+.logo-header:active {
+  opacity: 0.3;
+}
+.site-navigation {
+  list-style: none;
+}
+.slide a {
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  background-color: #FB565A;
+  border: none;
+}
+.slide a:hover {
+  color: #ffffff;
+  background-color: #E74246;
+}
+.slide a:active {
+  color: #ffffff;
+  background-color: #D7373B;
+  opacity: 0.3;
+}
+.type-of-work a,
+.type-of-work li:first-child a {
+  color: #ffffff;
+  background-color: #FB565A;
+}
+.type-of-work a,
+.type-of-work li:first-child a:hover {
+  color: #ffffff;
+  background-color: #E74246;
+}
+.type-of-work a,
+.type-of-work li:first-child a:active {
+  color: #ffffff;
+  background-color: #D7373B;
+  
+}
+.type-of-work a,
+.type-of-work li:nth-child(2) a {
+  color: #ffffff;
+  background-color: #00CA74;
+}
+.type-of-work a,
+.type-of-work li:nth-child(2) a:hover {
+  color: #ffffff;
+  background-color: #00BC6C;
+}
+.type-of-work a,
+.type-of-work li:nth-child(2) a:active {
+  color: #ffffff;
+  background-color: #00AA62;
+}
+.type-of-work a,
+.type-of-work li:last-child a {
+  color: #ffffff;
+  background-color: #EFC84A;
+}
+.type-of-work a,
+.type-of-work li:last-child a:hover {
+  color: #ffffff;
+  background-color: #EAB534;
+}
+.type-of-work a,
+.type-of-work li:last-child a:active {
+  color: #ffffff;
+  background-color: #E5A722;
+}
+.type-of-work a:active{
+  opacity: 0.3;
+}
+.social-button a {
+  color: #D7373B;
+  background-color: #000000;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.work-list h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 30px;
+}
+.work-item p {
+  font-size: 24px;
+  color: #283136;
+  letter-spacing: 0;
+  line-height: 30px;
+}
+.work-item p:nth-child(3) {
+  text-transform: none;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+.about-us p:first-child {
+  text-transform: none;
+  font-size: 45px;
+  letter-spacing: 0;
+  line-height: 45px;
+}
+.about-us p:nth-child(2) {
+  text-transform: none;
+  font-size: 16px;
+  color: #283136;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+.sales span:first-child {
+  text-transform: none;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+.sales span:last-child {
+  text-transform: none;
+  font-size: 16px;
+  color: #444444;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+h1 {
+  text-transform: none;
+  font-size: 55px;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 55px;
+}
+.filter-option {
+  text-transform: none;
+  font-size: 16px;
+  color: #283136;
+  letter-spacing: 0;
+  line-height: 19px;
+}
+.show-filter {
+  color: #000000;
+  background: #EEEEEE;
+  width: 260px;
+  height: 60px; 
+}
+.show-filter:hover {
+  background: #DFDFDF;
+}
+.show-filter:active {
+  background: #D5D5D5;
+  opacity: 0.3;
+}
+.button {
+  color: #ffffff;
+  background: #FB565A;
+}
+.button:hover {
+  background: #E74246;
+}
+.button:active {
+  background: #D7373B;
+}
+.product-info span {
+text-transform: none;
+font-size: 16px;
+color: #666666;
+letter-spacing: 0;
+text-align: center;
+line-height: 18px;
+}
