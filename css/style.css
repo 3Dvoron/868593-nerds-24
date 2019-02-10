@@ -8,16 +8,15 @@ body {
   color: #000000;
   text-transform: uppercase;
   background-color: #ffffff;
-  background-image: url("img/background-main.jpg");
   background-position: top center;
   background-repeat: no-repeat;
-  }
+}
 header {
   background-image: url("img/grey-back.jpg");
   background-position: 0 0 ;
   background-repeat: no-repeat;
 }
-li{
+li {
   list-style: none;
 }
 nav {
@@ -27,7 +26,7 @@ nav {
   letter-spacing: 0;
   line-height: 30px;
   text-decoration: none;
-  }
+}
 a {
   text-decoration: none;
 }
@@ -87,7 +86,6 @@ a {
 .type-of-work li:first-child a:active {
   color: #ffffff;
   background-color: #D7373B;
-  
 }
 .type-of-work a,
 .type-of-work li:nth-child(2) a {
@@ -216,10 +214,10 @@ h1 {
   background: #D7373B;
 }
 .product-info span {
-text-transform: none;
-font-size: 16px;
-color: #666666;
-letter-spacing: 0;
-text-align: center;
-line-height: 18px;
+  text-transform: none;
+  font-size: 16px;
+  color: #666666;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 18px;
 }
