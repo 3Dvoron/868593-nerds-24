@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin:0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
@@ -224,8 +224,8 @@ h1 {
 /* сетка */
 .main-navigation {
   display: flex;
+  flex-wrap: wrap;
   padding: 0 10px;
-  padding-top: 50px;
   margin: 0;
   width: 1160px;
   justify-content: space-between;
@@ -243,25 +243,28 @@ h1 {
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  width: 100%;
+  width: 1440px;
   background-color: #EEEEEE;
 }
 .container {
   width: 1160px;
   margin: 0;
   padding: 0;
+  padding-left: 10px;
 }
 .site-navigation {
   width: 440px;
   background-color: #EEEEEE;
   padding: 0;
   margin: 0;
+  padding-top: 87px;
 }
 .user-navigation {
   width: 160px;
   background-color: #EEEEEE;
-  padding: 0;
+  padding: 0 auto;
   margin: 0;
+  padding-top: 87px;
 }
 .user-navigation a {
   padding-left: 10px;
@@ -270,6 +273,7 @@ h1 {
   background-color: #EEEEEE;
   margin: 0;
   padding: 0;
+  padding-top: 50px;
 }
 .slider,
 .modal-write-us,
@@ -316,6 +320,7 @@ body {
   width: 260px;
   padding: 0;
   margin: 0;
+  padding-right: 80px;
 }
 .catalog-column {
   display: flex;
@@ -350,4 +355,24 @@ h1 {
   padding-top:100px;
   padding-bottom: 110px;
   margin-bottom: 55px;
+  width: 100%;
+  
+}
+.catalog-item img:first-child {
+  margin-bottom: -7px;
+}
+.filter-option {
+  padding-bottom:25px;
+  padding-left: -45px;
+}
+.filter-list {
+  padding-inline-start: 0;
+  padding-bottom: 46px;
+}
+.filter-group {
+  border: 0;
+}
+.filter-group legend {
+  font-weight: 700; 
+  margin-bottom: 20px;
 }
