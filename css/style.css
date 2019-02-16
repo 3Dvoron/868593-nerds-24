@@ -287,9 +287,9 @@ h1 {
 .work-list {
   display: flex;
   width: 1160px;
-  justify-content:space-between; 
-  margin: 0 ;
-  padding: 0 ; 
+  justify-content: space-between; 
+  margin: 0;
+  padding: 0; 
   margin: auto;
 }
 .work-item {
@@ -303,13 +303,13 @@ h1 {
 }
 .type-work-column {
   display: flex;
-  margin-top: 30px ;
+  margin-top: 30px;
   width: 1160px;
   align-content: space-between;
 }
 .footer {
   display: flex;
-  justify-content:space-between; 
+  justify-content: space-between; 
   width: 1440px;
 }
 .social-links {
@@ -331,7 +331,7 @@ h1 {
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content:space-between; 
+  justify-content: space-between; 
 }
 .catalog-item {
   width: 360px;
@@ -344,7 +344,7 @@ h1 {
 }
 .social-links {
   display: flex;
-  justify-content:space-between;  
+  justify-content: space-between;  
 }
 .background-social {
   background-color: #666666;
@@ -354,8 +354,8 @@ h1 {
 }
 h1 {
   background-color: #EEEEEE;
-  margin: 0 ;
-  padding-top:100px;
+  margin: 0;
+  padding-top: 100px;
   padding-bottom: 110px;
   margin-bottom: 55px;
   width: 100%;
@@ -365,7 +365,7 @@ h1 {
   margin-bottom: -7px;
 }
 .filter-option {
-  padding-bottom:25px;
+  padding-bottom: 25px;
   padding-left: -45px;
 }
 .filter-list {
@@ -381,7 +381,7 @@ h1 {
 }
 .footer-container {
   display: flex;
-  justify-content:space-between; 
+  justify-content: space-between; 
   width: 1160px;
   padding: 0;
   margin-left: 130px;
