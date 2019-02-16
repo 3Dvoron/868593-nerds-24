@@ -1,5 +1,5 @@
 body {
-  margin:0;
+  margin:auto;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
@@ -194,7 +194,8 @@ h1 {
   color: #000000;
   background: #EEEEEE;
   width: 260px;
-  height: 50px; 
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .show-filter:hover {
   background: #DFDFDF;
@@ -229,6 +230,7 @@ h1 {
   margin: 0;
   width: 1160px;
   justify-content: space-between;
+  margin: auto;
 }
 .site-navigation {
   display: flex;
@@ -247,10 +249,12 @@ h1 {
   background-color: #EEEEEE;
 }
 .container {
-  width: 1160px;
+  width: 1440px;
   margin: 0;
   padding: 0;
-  padding-left: 10px;
+  padding-left: 130px;
+  padding-right: 130px;
+  margin: auto;
 }
 .site-navigation {
   width: 440px;
@@ -280,12 +284,13 @@ h1 {
 .address {
   display: none;
 }
-.work-list{
+.work-list {
   display: flex;
   width: 1160px;
   justify-content:space-between; 
   margin: 0 ;
   padding: 0 ; 
+  margin: auto;
 }
 .work-item {
   width: 300px;
@@ -296,19 +301,16 @@ h1 {
   padding-top:14px;
   padding-bottom: 14px;
 }
-.type-work-column{
+.type-work-column {
   display: flex;
   margin-top: 30px ;
   width: 1160px;
   align-content: space-between;
 }
-html,
-body {
-  width: 1160px;
-}
 .footer {
   display: flex;
   justify-content:space-between; 
+  width: 1440px;
 }
 .social-links {
   width: 260px;
@@ -338,6 +340,7 @@ body {
 }
 .catalog {
   width: 1160px;
+  margin: auto;
 }
 .social-links {
   display: flex;
@@ -375,4 +378,12 @@ h1 {
 .filter-group legend {
   font-weight: 700; 
   margin-bottom: 20px;
+}
+.footer-container {
+  display: flex;
+  justify-content:space-between; 
+  width: 1160px;
+  padding: 0;
+  margin-left: 130px;
+  margin-right: 130px;
 }
