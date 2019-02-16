@@ -226,7 +226,8 @@ h1 {
   display: flex;
   padding: 0 10px;
   padding-top: 50px;
-  margin: 0 auto;
+  margin: 0;
+  width: 1160px;
   justify-content: space-between;
 }
 .site-navigation {
@@ -247,9 +248,8 @@ h1 {
 }
 .container {
   width: 1160px;
-  margin: 0 auto;
-  padding: 0 10px;
-  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 .site-navigation {
   width: 440px;
@@ -268,6 +268,8 @@ h1 {
 }
 .header-logo {
   background-color: #EEEEEE;
+  margin: 0;
+  padding: 0;
 }
 .slider,
 .modal-write-us,
@@ -298,7 +300,7 @@ h1 {
 }
 html,
 body {
-  min-width: 1160px;
+  width: 1160px;
 }
 .footer {
   display: flex;
@@ -330,7 +332,7 @@ body {
   margin: 0;
 }
 .catalog {
-   width: 1160px;
+  width: 1160px;
 }
 .social-links {
   display: flex;
@@ -346,4 +348,6 @@ h1 {
   background-color: #EEEEEE;
   margin: 0 ;
   padding-top:100px;
+  padding-bottom: 110px;
+  margin-bottom: 55px;
 }
