@@ -1,5 +1,5 @@
 body {
-  margin:auto;
+  margin: auto;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
@@ -34,7 +34,7 @@ a {
   background-color: #EEEEEE;
 }
 .main-navigation a:focus {
-  text-decoration:underline;
+  text-decoration: underline;
   color: #000000;
   text-decoration-color: #fb565a;
 }
@@ -239,7 +239,7 @@ h1 {
   padding: 0;
 }
 .main-header {
-  margin: 0 ;
+  margin: 0;
   padding: 0 ;
   display: flex;
   align-items: center;
@@ -298,7 +298,7 @@ h1 {
 .work-item a {
   padding-left: 40px;
   padding-right: 40px;
-  padding-top:14px;
+  padding-top: 14px;
   padding-bottom: 14px;
 }
 .type-work-column {
@@ -344,13 +344,17 @@ h1 {
 }
 .social-links {
   display: flex;
+  align-items: center;
   justify-content: space-between;  
 }
 .background-social {
   background-color: #666666;
   width: 81px;
   height: 81px;
-  border-radius: 50%
+  border-radius: 50%;
+  align-items: center;
+  justify-content: space-between;  
+  margin: auto;
 }
 h1 {
   background-color: #EEEEEE;
