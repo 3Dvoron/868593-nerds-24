@@ -71,44 +71,47 @@
     </section>
     </div>
     <section class="about-us">
-      <p>Мы — маленькая, но гордая
-         дизайн-студия из Краснодара. 
-      </p>
-      <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
-         превыше креатива. Работаем не покладая рук, как роботы.
-      </p>  
-      <p>Выполняем заказы на разработку:</p>
-      <ul>
-        <li> Веб-сайтов любой сложности</li>
-        <li>Мобильных приложений для iOS и Android</li>
-        <li>Слайдшоу и видео для корпоративных презентаций</li>
-      </ul>
-      <img src="img/logo.png" width="360" height="208" alt="Логотип студии Нердс">
-      <p>с 2004 года Любим точность во всем:</p>
-      <table>
-        <tr>
-          <td>146%</td>
-          <td>100%</td>
-          <td>50%</td>
-        </tr>
-        <tr>
-          <td>Уровень самоотдачи</td>
-          <td>Соблюдение сроков</td>
-          <td>Минимальная предоплата</td>
-        </tr>
-      </table>
+      <div class="info-about-us">
+        <p>Мы — маленькая, но гордая
+          дизайн-студия из Краснодара. 
+        </p>
+        <img src="img/logo.png" width="360" height="208" alt="Логотип студии Нердс"> 
+        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+          превыше креатива. Работаем не покладая рук, как роботы.
+        </p> 
+        <p>Выполняем заказы на разработку:</p>
+        <ul>
+          <li> Веб-сайтов любой сложности</li>
+          <li>Мобильных приложений для iOS и Android</li>
+          <li>Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
+        <p>с 2004 года Любим точность во всем:</p>
+        <table class="info-table">
+          <tr>
+            <td>146<sup>%</sup></td>
+            <td>100<sup>%</sup></td>
+            <td>50<sup>%</sup></td>
+          </tr>
+          <tr>
+            <td>Уровень самоотдачи</td>
+            <td>Соблюдение сроков</td>
+            <td>Минимальная предоплата</td>
+          </tr>
+        </table>
+      </div>
     </section>
     <section class="partners">
-      <ul>
-        <li><a href="htmlacademy.ru">htmlacademy</a></li>
-        <li><a href="#">Барбершоп Бородинский</a> </li>
-        <li><a href="#">Пинк</a></li>
-        <li><a href="#">Мишка</a></li>
+      <ul class="partners-logo">
+        <li><a href="htmlacademy.ru"><img src="img/logo-html.png" width="199" height="68" alt="Html академия"></a></li>
+        <li><a href="#"><img src="img/logo-barbershop.png" width="209" height="90" alt="Барбершоп бородинский"></a> </li>
+        <li><a href="#"><img src="img/logo-pink.png" width="185" height="52" alt="Пинк"></a></li>
+        <li><a href="#"><img src="img/logo-mishka.png" width="173" height="84" alt="Мишка"></a></li>
       </ul>
     </section>
     <section class="modal-write-us">
-      <h2>напишите нам</h2>
       <form class="write-us" method="POST">
+        <h2 class="modal-title">Напишите нам</h2>
+        <button class="modal-close" type="button"><img src="img/modal-close.png" width="21" height="21" alt="Закрыть"></button>
         <p class="form-field">
           <label for="name-form">Ваше Имя:</label>
           <input id="name-form" type="text" name="name-form" placeholder="Имя фамилия">
@@ -121,17 +124,16 @@
           <label for="text-form">текст письма:</label>
           <input id="text-form" type="text" name="text-form" placeholder="В свободной форме">
         </p>
-        <button class="button" type="submit">Отправить</button>
-        <button class="modal-close" type="button">Закрыть</button>
+        <button class="button-submit" type="submit">Отправить</button>
       </form>
-      <div class="address">Nerds design studio
-        191186, Санкт-Петербург, 
-        ул. Б. Конюшенная, д. 19/8
-        тел. +7 (812) 275-75-75
-        <a href="#">Напишите нам.</a>
-      </div>
-      <img src="maps.jpg" alt="Карта">
     </section>
+    <div class="address">Nerds design studio
+      191186, Санкт-Петербург, 
+      ул. Б. Конюшенная, д. 19/8
+      тел. +7 (812) 275-75-75
+      <a href="#">Напишите нам.</a>
+      <img src="maps.jpg" alt="Карта">
+    </div>
   </main>
   <footer class="footer">
     <div class="footer-container">
