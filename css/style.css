@@ -233,10 +233,13 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   padding: 0 10px;
-  margin: 0;
+  margin: 0 auto;
   width: 1160px;
   justify-content: space-between;
   margin: auto;
+  margin-left: 130px;
+  margin-right: 130px;
+  background-color: #EEEEEE;
 }
 .site-navigation {
   display: flex;
@@ -245,19 +248,20 @@ h1 {
   padding: 0;
 }
 .main-header {
-  margin: 0;
-  padding: 0 ;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  width: 1440px;
+  width: 100%;
   background-color: #EEEEEE;
+  margin: auto;
+  margin-bottom: 80px;
 }
 .container {
-  width: 1440px;
-  margin: 0;
-  padding: 0;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
   margin-left: 130px;
   margin-right: 130px;
   /* margin: auto; */
@@ -295,6 +299,9 @@ h1 {
   margin: 0;
   padding: 0; 
   margin: auto;
+  padding-bottom: 80px;
+  border-bottom: 3px solid #EEEEEE;
+  margin-bottom: 40px;
 }
 .work-item {
   width: 300px;
@@ -321,6 +328,7 @@ h1 {
 }
 .sales {
   width: 560px;
+  padding-right: 200px;
 }
 .filter {
   width: 260px;
@@ -351,14 +359,22 @@ h1 {
   align-items: center;
   justify-content: space-between;  
 }
-.background-social {
+.social-button {
+  display: flex;
   background-color: #666666;
   width: 81px;
   height: 81px;
   border-radius: 50%;
   align-items: center;
-  justify-content: space-between;  
-  margin: auto;
+  justify-content: center;  
+  margin: auto; 
+}
+.social-button:hover {
+  background-color: #E74246;
+}
+.social-button:active {
+  background-color: #D7373B;
+  opacity: 0.3;
 }
 h1 {
   background-color: #EEEEEE;
@@ -477,6 +493,7 @@ margin-top: 70px;
   display: flex;
   width: 1160px;
   justify-content: space-between;
+  margin-bottom: 70px;
 }
 .info-about-us {
   display: flex;
@@ -506,7 +523,7 @@ margin-top: 70px;
 }
 .about-us p:nth-child(6) {
   width: 360px;
-  order: 6;
+  order: 3;
   font-weight: 700;
 }
 .about-us ul {
@@ -524,24 +541,47 @@ margin-top: 70px;
   line-height: 10.06px;
   font-weight: 700;
 } 
+.info-table tr:last-child {
+font-size: 16px;
+color: #283136;
+letter-spacing: 0;
+line-height: 18px;
+}
+.info-table td {
+  padding-bottom: 30px;
+}
 .partners {
   display: flex;
   justify-content: space-between;
+  border-bottom: 3px solid #EEEEEE;
+  border-top: 3px solid #EEEEEE;
 }
 .partners-logo {
   display: inline-flex;
   width: 1160px;
   padding: 0;
   justify-content: space-between;
+  opacity: 0.2;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  margin: 0;
 }
 /* спрятал попап */
-.write-us {
+/* .write-us {
   display: none;
-}
+} */
 /*  */
 .slider {
-background-color:#EEEEEE;
-width: 100%;
-padding: 0;
-margin: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.slide:nth-child(1) {
+  background-image: url("img/slide1.png");
+}
+.slide:nth-child(2) {
+  display: none;
+}
+.slide:nth-child(3) {
+  display: none;
 }
