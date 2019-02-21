@@ -236,10 +236,8 @@ h1 {
   margin: 0 auto;
   width: 1160px;
   justify-content: space-between;
-  margin: auto;
-  margin-left: 130px;
-  margin-right: 130px;
   background-color: #EEEEEE;
+
 }
 .site-navigation {
   display: flex;
@@ -262,9 +260,6 @@ h1 {
   width: 1160px;
   margin: 0 auto;
   padding: 0 10px;
-  margin-left: 130px;
-  margin-right: 130px;
-  /* margin: auto; */
 }
 .site-navigation {
   width: 440px;
@@ -288,9 +283,6 @@ h1 {
   margin: 0;
   padding: 0;
   padding-top: 50px;
-}
-.address {
-  display: none;
 }
 .work-list {
   display: flex;
@@ -361,7 +353,7 @@ h1 {
 }
 .social-button {
   display: flex;
-  background-color: #666666;
+  background-color: #E1E1E1;
   width: 81px;
   height: 81px;
   border-radius: 50%;
@@ -408,18 +400,20 @@ h1 {
   justify-content: space-between; 
   width: 1160px;
   padding: 0;
-  margin-left: 130px;
-  margin-right: 130px;
+  margin: auto;
 }
 .write-us {
   text-transform: none;
-  position: fixed;
-  bottom: 180px;
-  left: 240px;
+  position: absolute;
+  top: 100%;
+  left: auto;
+  right: auto;
   z-index: 2;
   padding-left: 100px;
   padding-right: 100px;
   margin: auto;
+  margin-left: 100px;
+  margin-right: 100px;
   background-color: #ffffff;
   width: 760px;
   font-weight: 700;
@@ -429,25 +423,27 @@ h1 {
   box-shadow: 0 20px 40px 0 rgba(0,1,1,0.75);
 }
 .modal-title {
-width: 700px;
-font-size: 45px;
-color: #000000;
-letter-spacing: 0;
-line-height: 45px;
-margin-top: 70px;
+  width: 700px;
+  font-size: 45px;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 45px;
+  margin-top: 70px;
 }
 .form-field {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin: 0;
 }
 #name-form,
 #email-form {
-  width: 360px;
+  width: 354px;
   background: #FFFFFF;
   border: 2px solid #D7DCDE;
   padding-bottom: 15px;
   padding-top: 15px;
+  margin-bottom: 30px
 }
 #name-form:hover,
 #email-form:hover,
@@ -460,9 +456,12 @@ margin-top: 70px;
   border: 2px solid #000000;
 }
 #text-form {
-  width: 750px;
-  height: 120px;
+  width: 754px;
+  resize: none;
   border: 2px solid #D7DCDE;
+  text-align: text-top;
+  padding-bottom: 85px;
+  margin-bottom: 50px;
 }
 .modal-close {
   margin-top: 75px;
@@ -486,8 +485,7 @@ margin-top: 70px;
   padding-bottom: 15px;
   border-radius: 3%;
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 83px;
+  margin-bottom: 85px;
 }
 .about-us {
   display: flex;
@@ -526,10 +524,21 @@ margin-top: 70px;
   order: 3;
   font-weight: 700;
 }
-.about-us ul {
+.advantages-list {
   width: 660px;
   order: 7;
   text-transform: none;
+  padding: 0;
+  vertical-align: middle;
+}
+.advantages-list li:before {
+  display: inline-block;
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: #FB565A;
+  vertical-align: middle;
+  margin-right: 5px;
 }
 .info-about-us table {
   width: 360px;
@@ -555,6 +564,7 @@ line-height: 18px;
   justify-content: space-between;
   border-bottom: 3px solid #EEEEEE;
   border-top: 3px solid #EEEEEE;
+  margin-bottom: 80px;
 }
 .partners-logo {
   display: inline-flex;
@@ -567,21 +577,39 @@ line-height: 18px;
   margin: 0;
 }
 /* спрятал попап */
-/* .write-us {
+.write-us {
   display: none;
-} */
+}
 /*  */
 .slider {
   width: 100%;
   padding: 0;
-  margin: 0;
+  margin: auto;
 }
 .slide:nth-child(1) {
-  background-image: url("img/slide1.png");
+  background-image: url("img/slide1.png") no-repeat 698px 413px;
+  
+  width: 400px;
 }
 .slide:nth-child(2) {
   display: none;
 }
 .slide:nth-child(3) {
   display: none;
+}
+.site-navigation a:not([href]) {
+  border-bottom: 3px solid #FB565A;
+}
+.address p {
+  position: absolute;
+  left: 25%;
+  width: 319px;
+  height: 308px;
+  background-color: #ffffff;
+}
+iframe {
+  width: 1700px;
+  height: 418px;
+  margin: 0;
+  margin-bottom: 70px;
 }
