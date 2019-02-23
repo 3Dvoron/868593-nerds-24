@@ -14,7 +14,7 @@
         <img src="img/header-logo.png" width="160" height="67" alt="Логотип студии Нердс">
       </div>
       <ul class="site-navigation">
-        <li><a href="atelier.html">Студия</a></li>          
+        <li><a>Студия</a></li>          
         <li><a href="clients.html">Клиенты</a></li>
         <li><a href="catalog.html">Магазин</a></li>
         <li><a href="contacts.html">Контакты</a></li>
@@ -26,8 +26,8 @@
     <div class="slider">
         <ul class="slides">
           <li class="slide">
-            <h3>Долго,Дорого,<br>Скрупулезно.</h3>
-            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+            <h3>Долго, дорого,<br>скрупулезно.</h3>
+            <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
             <a class="more-info" href="#">Узнать больше</a>
           </li>
           <li class="slide">
@@ -64,7 +64,7 @@
           <li class="work-item">
             <img src="img/illustration-3.jpg" width="300" height="146" alt="слайд">
             <h3>Презентации</h3> 
-            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <p>Вы даже не подозреваете,<br> насколько вы изумительны!</p>
             <a href="order.html">Заказать</a>
           </li>
         </ul>
@@ -127,17 +127,17 @@
         <button class="button-submit" type="submit">Отправить</button>
       </form>
     </section>
-    <div class="address">
-      <p>Nerds design studio
-      191186, Санкт-Петербург, 
-      ул. Б. Конюшенная, д. 19/8
-      тел. +7 (812) 275-75-75
-      <a href="#">Напишите нам.</a>
-      </p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6269466104459!2d30.323186873461648!3d59.93833221341095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2smn!4v1550740894435" width="1160" height="412" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
   </main>
-  <footer class="footer container">
+  <footer class="footer">
+    <div class="address">
+      <p><span>Nerds design studio</span>
+        <span>19186, Санкт-Петербург, 
+        ул.Б.Конюшенная,д.19/8</span>
+        <span>тел. +7 (812) 275-75-75</span>
+        <a href="#">Напишите нам</a>
+        </p>
+        <iframe src="https://yandex.ru/map-widget/v1/-/CCQrqMY3" frameborder="1" allowfullscreen="true"></iframe>
+    </div>
     <div class="footer-container">
       <ul class="social-links">
         <li><a class="social-button" href="#"><img src="img/vk-icon.svg" width="27" height="16" alt="группа в вконтакте"><span class="visually-hidden">Вконтакте</span></a></li>
@@ -150,5 +150,12 @@
       </p>
     </div>
   </footer>
+  <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.pixlayout.0.9.7.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$.pixlayout({clip: true, src: "nerds-index.jpg", show:true, center:true, top:0, left:0, pervious: false});
+}); 
+</script>
   </body>
 </html>

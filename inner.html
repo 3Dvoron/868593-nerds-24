@@ -35,14 +35,17 @@
             <ul class="filter-list">
               <li class="filter-option">
                 <input type="radio" name="grid" id="adaptive" checked>
+                <span class="decoration-radio"></span>
                 <label for="adaptive">Адаптивная</label>
               </li>
               <li class="filter-option">
                 <input type="radio" name="grid" id="fixed">
+                <span class="decoration-radio"></span>
                 <label for="fixed">Фиксированная</label>
               </li>
               <li class="filter-option">
                 <input type="radio" name="grid" id="rubber">
+                <span class="decoration-radio"></span>
                 <label for="rubber">Резиновая</label>
               </li>
             </ul>
@@ -52,22 +55,27 @@
             <ul class="filter-list">
               <li class="filter-option">
                 <input type="checkbox" name="slider-filter" id="slider-filter" checked>
+                <span class="decoration-filter"></span>
                 <label for="slider-filter">Слайдер</label>
               </li>
               <li class="filter-option">
                 <input type="checkbox" name="advantage-filter" id="advantage-filter">
+                <span class="decoration-filter"></span>
                 <label for="advantage-filter">Блок преимуществ</label>
               </li>
               <li class="filter-option">
                 <input type="checkbox" name="news-filter" id="news-filter" checked>
+                <span class="decoration-filter"></span>
                 <label for="news-filter">Новости</label>
               </li>
               <li class="filter-option">
                 <input type="checkbox" name="gallery-filter" id="gallery-filter">
+                <span class="decoration-filter"></span>
                 <label for="gallery-filter">Галерея</label>
               </li>
               <li class="filter-option">
                 <input type="checkbox" name="basket-filter" id="basket-filter">
+                <span class="decoration-filter"></span>
                 <label for="basket-filter">Корзина</label>
               </li>
             </ul>
@@ -80,7 +88,7 @@
         <ul class="catalog-list">
           <li class="catalog-item">
             <img src="img/slider.svg" width="360" height="40" alt="слайдер товара">
-            <a href="#"><img src="img/img-sedona.jpg" width="360" height="576" alt="седона"></a> 
+            <a class="item" href="#"><img src="img/img-sedona.jpg" width="360" height="576" alt="седона"></a> 
             <div class="product-info">
               <span>Информационный сайт для туристов</span> 
               <a class="button" href="addbasket.html">9900руб.</a>
@@ -88,7 +96,7 @@
           </li>
           <li class="catalog-item">
             <img src="img/slider.svg" width="360" height="40" alt="слайдер товара">
-            <a href="#"><img src="img/img-pink.jpg" width="360" height="576" alt="пинк"></a> 
+            <a class="item" href="#"><img src="img/img-pink.jpg" width="360" height="576" alt="пинк"></a> 
             <div class="product-info">
               <span>Продуктовый лендинг приложения для iOS и Android</span>
               <a class="button" href="addbasket.html">9900руб.</a>
@@ -96,7 +104,7 @@
           </li>
           <li class="catalog-item">
             <img src="img/slider.svg" width="360" height="40" alt="слайдер товара">
-            <a href="#"><img src="img/img-barbershop.jpg" width="360" height="576" alt="барбершоп"></a>
+            <a class="item" href="#"><img src="img/img-barbershop.jpg" width="360" height="576" alt="барбершоп"></a>
             </a>
             <div class="product-info">
               <span>Сайт салона красоты.Для мужчин, да.</span>
@@ -105,7 +113,7 @@
           </li>
           <li class="catalog-item">
             <img src="img/slider.svg" width="360" height="40" alt="слайдер товара">
-            <a href="#"><img src="img/img-mishka.jpg" width="360" height="576" alt="мишка"></a>
+            <a class="item" href="#"><img src="img/img-mishka.jpg" width="360" height="576" alt="мишка"></a>
             <div class="product-info">
               <span>Интернет-магазин вязаных игрушек</span>
               <a class="button" href="addbasket.html">9900руб.</a>
@@ -113,7 +121,7 @@
           </li>
           <li class="catalog-item">
             <img src="img/slider.svg" width="360" height="40" alt="слайдер товара">
-            <a href="#"><img src="img/img-aplus.jpg" width="360" height="576" alt="aplus"></a>
+            <a class="item" href="#"><img src="img/img-aplus.jpg" width="360" height="576" alt="aplus"></a>
             <div class="product-info">
               <span>Лендинг курсов повышения квалификации</span>
               <a class="button" href="addbasket.html">9900руб.</a>
@@ -121,7 +129,7 @@
           </li>
           <li class="catalog-item">
             <img src="img/slider.svg" width="360" height="40" alt="слайдер товара">
-            <a href="#"><img src="img/img-kvast.jpg" width="360" height="576"  alt="кваст"></a>
+            <a class="item" href="#"><img src="img/img-kvast.jpg" width="360" height="576"  alt="кваст"></a>
             <div class="product-info">
               <span>Промо-сайт производителя крафтового кваса</span>
               <a class="button" href="addbasket.html">9900руб.</a>
@@ -149,15 +157,17 @@
         </form>
       </section>
     </div>  
-    <div class="address">Nerds design studio
-      191186, Санкт-Петербург,
-      ул. Б. Конюшенная, д. 19/8
-      тел. +7 (812) 275-75-75
-      <a href="#">Напишите нам</a>
-      <img src="maps.jpg" alt="Карта">
-    </div>
   </main>
-  <footer class="footer container">
+  <footer class="footer">
+    <div class="address">
+      <p><span>Nerds design studio</span>
+         <span>191186,Санкт-Петербург, 
+            ул.Б.Конюшенная,д.19/8</span>
+          <span>тел. +7 (812) 275-75-75</span>
+        <a href="#">Напишите нам.</a>
+        </p>
+        <iframe src="https://yandex.ru/map-widget/v1/-/CCQrqMY3" frameborder="1" allowfullscreen="true"></iframe>
+    </div>
     <div class="footer-container">
       <ul class="social-links">
         <li><a class="social-button" href="#"><img src="img/vk-icon.svg" width="27" height="16" alt="группа в вконтакте"><span class="visually-hidden">Вконтакте</span></a></li>
@@ -170,5 +180,12 @@
       </p>
   </div>
   </footer>
+  <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.pixlayout.0.9.7.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$.pixlayout({clip: true, src: "nerds-catalog.jpg", show:true, center:true, top:0, left:0, pervious: false});
+}); 
+</script>
   </body>
 </html>
