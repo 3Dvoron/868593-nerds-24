@@ -644,9 +644,9 @@ line-height: 18px;
   justify-content: space-between;
 }
 /* спрятал попап */
-/* .write-us {
+.write-us {
   display: none;
-} */
+}
 /*  */
 .slider {
   width: 100%;
@@ -694,9 +694,9 @@ iframe {
   background-image: url("img/slide1.png");
   background-size: 698px 413px;
   background-repeat: no-repeat;
-  background-position: 474px;
+  background-position: 430px;
   padding-bottom: 83px;
-  margin-left: 169px;
+  padding-left: 0;
 }
 .more-info {
   display: block;
