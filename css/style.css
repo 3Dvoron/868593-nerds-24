@@ -447,7 +447,7 @@ vertical-align: middle;
 .write-us {
   text-transform: none;
   position: absolute;
-  top: 57%;
+  top: 30%;
   left: 50%;
   z-index: 2;
   padding-left: 100px;
@@ -458,10 +458,10 @@ vertical-align: middle;
   background-color: #ffffff;
   width: 760px;
   font-weight: 700;
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   box-shadow: 0 20px 40px 0 rgba(0,1,1,0.75);
+  display: none;
 }
 .modal-title {
   width: 700px;
@@ -644,8 +644,8 @@ line-height: 18px;
   justify-content: space-between;
 }
 /* спрятал попап */
-.write-us {
-  display: none;
+.modal-show {
+  display: flex;
 }
 /*  */
 .slider {
@@ -878,5 +878,5 @@ iframe {
   margin-bottom: 88px;
 }
 .inner-modal {
-  top: 156%;
+  top: 81%;
 }

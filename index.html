@@ -137,7 +137,7 @@
         <span>19186, Санкт-Петербург, 
         ул.Б.Конюшенная,д. 19/8</span>
         <span>тел.+7 (812) 275-75-75</span>
-        <a href="#">Напишите нам</a>
+        <a class="open-popap" href="#">Напишите нам</a>
         </p>
         <iframe src="https://yandex.ru/map-widget/v1/-/CCQrqMY3" frameborder="1" allowfullscreen="true"></iframe>
     </div>
@@ -153,5 +153,18 @@
       </p>
     </div>
   </footer>
+  <script>
+    var write = document.querySelector(".open-popap");
+    var modal = document.querySelector(".write-us");
+    write.addEventListener("click",function (evt) {
+      evt.preventDefault();
+      modal.classList.add("modal-show");
+    });
+    var close = document.querySelector(".modal-close");
+    close.addEventListener("click", function (evt){
+      evt.preventDefault();
+      modal.classList.remove("modal-show");
+    });
+  </script>
   </body>
 </html>
