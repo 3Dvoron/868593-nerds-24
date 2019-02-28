@@ -34,9 +34,7 @@ a {
   background-color: #EEEEEE;
 }
 .main-navigation a:focus {
-  text-decoration: underline;
   color: #000000;
-  text-decoration-color: #fb565a;
 }
 .main-navigation a:active{
   color: #000000;
@@ -145,7 +143,7 @@ a {
   color: #283136;
   letter-spacing: 0;
   line-height: 30px;
-  margin-bottom: 30px
+  margin-bottom: 32px
 }
 .work-item p:nth-child(3) {
   text-transform: none;
@@ -206,6 +204,8 @@ h1 {
   padding-top: 15px;
   padding-bottom: 15px;
   text-transform: uppercase;
+  border: 0;
+  border-radius: 3%;
 }
 .show-filter:hover {
   background: #DFDFDF;
@@ -270,7 +270,7 @@ h1 {
   width: 100%;
   background-color: #EEEEEE;
   margin: auto;
-  margin-bottom: 78px;
+  margin-bottom: 80px;
 }
 .container {
   width: 1160px;
@@ -301,7 +301,7 @@ h1 {
   background-color: #EEEEEE;
   margin: 0;
   padding: 0;
-  padding-top: 50px;
+  padding-top: 48px;
 }
 .work-list {
   display: flex;
@@ -312,7 +312,7 @@ h1 {
   margin: auto;
   padding-bottom: 80px;
   border-bottom: 3px solid #EEEEEE;
-  margin-bottom: 42px;
+  margin-bottom: 39px;
 }
 .work-item {
   width: 300px;
@@ -334,7 +334,8 @@ h1 {
 }
 .social-links {
   width: 260px;
-  margin-top: 6px;
+  margin-top: 9px;
+  margin-bottom: 75px;
 }
 .sales {
   width: 560px;
@@ -397,7 +398,7 @@ h1 {
 h1 {
   background-color: #EEEEEE;
   margin: 0;
-  padding-top: 64px;
+  padding-top: 67px;
   padding-bottom: 110px;
   margin-bottom: 55px;
   width: 760px;
@@ -408,7 +409,7 @@ h1 {
  display: block;
 }
 .filter-option {
-  padding-bottom: 16px;
+  padding-bottom: 3px;
   font-size: 16px;
   line-height: 20px;
 }
@@ -425,7 +426,7 @@ h1 {
   border: 0;
   margin: 0;
   padding: 0;
-  margin-bottom: 14px;
+  margin-bottom: 22px;
 }
 .filter-group legend {
   font-weight: 700; 
@@ -436,6 +437,10 @@ h1 {
 }
 .filter-option li {
 vertical-align: middle;
+}
+.filter-checkbox li {
+  margin-bottom: 4px;
+  padding-bottom: 0px;
 }
 .footer-container {
   display: flex;
@@ -529,6 +534,7 @@ vertical-align: middle;
   padding-top: 15px;
   padding-bottom: 15px;
   border-radius: 3%;
+  border: 0;
   text-align: center;
   margin-bottom: 85px;
 }
@@ -564,7 +570,7 @@ vertical-align: middle;
 .how-long-we-work {
   width: 360px;
   font-weight: 700;
-  margin-top: 29px;
+  margin-top: 27px;
   margin-left: 55px;
 }
 .advantages-list {
@@ -572,7 +578,7 @@ vertical-align: middle;
   text-transform: none;
   padding: 0;
   vertical-align: middle;
-  margin-bottom: 14px;
+  margin-bottom: 11px;
 }
 .advantages-list li {
   margin-bottom: 25px;
@@ -595,7 +601,7 @@ vertical-align: middle;
 }
 .info-table {
   margin-left: 40px;
-  margin-top: 50px;
+  margin-top: 54px;
 }
 .info-table tr:first-child {
   font-size: 45px;
@@ -611,7 +617,7 @@ line-height: 18px;
 }
 .info-table td {
   padding-top: 5px;
-  padding-bottom: 33px;
+  padding-bottom: 30px;
   padding-right: 23px;
   text-transform: none;
   position: relative;
@@ -659,9 +665,11 @@ line-height: 18px;
   width: 420px;
 }
 .slide:nth-child(2) {
+  width: 560px;
   display: none;
 }
 .slide:nth-child(3) {
+  width: 460px;
   display: none;
 }
 .site-navigation a:not([href]) {
@@ -696,7 +704,7 @@ iframe {
   background-size: 698px 413px;
   background-repeat: no-repeat;
   background-position: 430px;
-  padding-bottom: 83px;
+  padding-bottom: 81px;
   padding-left: 0;
 }
 .more-info {
@@ -709,7 +717,7 @@ iframe {
 .slide h3 {
   font-size: 55px;
   line-height: 55px;
-  padding-top: 65px;
+  padding-top: 67px;
   padding-bottom: 26px;
   text-transform: none;
   font-weight: 500;
@@ -777,11 +785,18 @@ iframe {
   background-image: url("img/checkbox-off.png");
   background-repeat: no-repeat;
   background-position: left;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  opacity: 0.3;
   padding-left: 35px;
   margin-left: 0;
   line-height: 20px;
   font-size: 16px;
   padding-bottom: 8px;
+}
+.decoration-filter:hover {
+  opacity: 1;
 }
 #slider-filter,
 #advantage-filter,
@@ -810,13 +825,26 @@ iframe {
 }
 .decoration-radio {
   background-image: url("img/radio-off.png");
+  opacity: 0.3;
+  display: inline-block;
   background-repeat: no-repeat;
+  width: 28px;
+  height: 28px;
   padding-left: 33px;
   margin-left: 0;
   line-height: 20px;
   font-size: 16px;
-  padding-bottom: 8px;
+  padding-bottom: 8px; 
   background-position: left;
+}
+.filter-group label {
+  opacity: 0.3;
+}
+.decoration-radio:hover {
+  opacity: 1;
+}
+.filter-group label:hover {
+  opacity: 1;
 }
 #adaptive:checked + .decoration-radio {
   background-image: url("img/radio-on.png");
