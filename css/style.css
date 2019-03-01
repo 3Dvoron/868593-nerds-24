@@ -143,7 +143,7 @@ a {
   color: #283136;
   letter-spacing: 0;
   line-height: 30px;
-  margin-bottom: 32px
+  margin-bottom: 31px
 }
 .work-item p:nth-child(3) {
   text-transform: none;
@@ -399,7 +399,7 @@ h1 {
   background-color: #EEEEEE;
   margin: 0;
   padding-top: 67px;
-  padding-bottom: 110px;
+  padding-bottom: 107px;
   margin-bottom: 55px;
   width: 760px;
   font-weight: 600;
@@ -631,6 +631,7 @@ line-height: 18px;
 }
 .partners-logo {
   display: inline-flex;
+  position: relative;
   width: 1160px;
   padding: 0;
   align-content: center;
@@ -640,7 +641,8 @@ line-height: 18px;
   padding-top: 45px;
   padding-bottom: 5px;
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 34px;
+  margin-right: 65px
 }
 .partners-logo li:first-child {
   margin-left: 30px;
@@ -887,15 +889,17 @@ iframe {
   top: 3px;
   font-size: 30px;
 }
-.partners-logo li:after {
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
+.partners-logo li::after {
+  display: inline-block;
+  position: absolute;
   content: "";
   background-color: #000000;
   width: 2px;
   height: 50px;
   margin-left: 45px;
+}
+.partners-logo li:last-child::after {
+  display: none;
 }
 .filter-option label {
   vertical-align: -webkit-baseline-middle;
@@ -909,3 +913,51 @@ iframe {
 .inner-modal {
   top: 81%;
 }
+/* .slider-controls {
+  position: relative;
+  bottom: 104px;
+  z-index: 100;
+  
+  width: 160px;
+  height: 18px;
+
+  text-align: center;
+  font-size: 0;
+  transform: translateX(-50%);
+}  */
+ /* .slider-controls label {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+} */
+/* .slider-controls label::after {
+  content: "";
+  position: absolute;
+  top: 349px;
+  left: 746px;
+  z-index: 1;
+  width: 18px;
+  height: 18px;
+  background: #ffffff;
+  border-radius: 50%;
+} 
+#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
+#product-2:checked ~ .slider-controls .slider-controls-item--2::before,
+#product-3:checked ~ .slider-controls .slider-controls-item--3::before {
+  content: "";
+  position: absolute;
+  top: 358px;
+  left: 755px;
+  z-index: 2;
+  width: 4px;
+  height: 4px;
+  margin: -4px;
+  background-color: inherit;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
+} */
+
