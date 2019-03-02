@@ -664,14 +664,30 @@ line-height: 18px;
 
 }
 .slide:nth-child(1) {
-  width: 420px;
+  width: 1160px;
+  background-image: url("img/slide1.png");
+  background-size: 698px 413px;
+  background-repeat: no-repeat;
+  background-position: 430px 8px;
+  display: block;
+  padding-bottom: 81px;
 }
 .slide:nth-child(2) {
-  width: 560px;
+  width: 1160px;
+  background-image: url("img/slide2.png");
+  background-size: 663px 430px;
+  background-repeat: no-repeat;
+  background-position: 430px 8px;
+  padding-bottom: 81px;
   display: none;
 }
 .slide:nth-child(3) {
-  width: 460px;
+  background-image: url("img/slide3.png");
+  background-size: 759px 411px;
+  background-repeat: no-repeat;
+  background-position: 430px 8px;
+  width: 1160px;
+  padding-bottom: 81px;
   display: none;
 }
 .site-navigation a:not([href]) {
@@ -702,11 +718,6 @@ iframe {
 .slides {
   width: 1160px;
   margin: auto;
-  background-image: url("img/slide1.png");
-  background-size: 698px 413px;
-  background-repeat: no-repeat;
-  background-position: 430px;
-  padding-bottom: 81px;
   padding-left: 0;
 }
 .more-info {
@@ -914,51 +925,5 @@ iframe {
 .inner-modal {
   top: 81%;
 }
-/* .slider-controls {
-  position: relative;
-  bottom: 104px;
-  z-index: 100;
-  
-  width: 160px;
-  height: 18px;
 
-  text-align: center;
-  font-size: 0;
-  transform: translateX(-50%);
-}  */
- /* .slider-controls label {
-  position: relative;
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  padding: 8px;
-  border-radius: 50%;
-  cursor: pointer;
-} */
-/* .slider-controls label::after {
-  content: "";
-  position: absolute;
-  top: 349px;
-  left: 746px;
-  z-index: 1;
-  width: 18px;
-  height: 18px;
-  background: #ffffff;
-  border-radius: 50%;
-} 
-#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
-#product-2:checked ~ .slider-controls .slider-controls-item--2::before,
-#product-3:checked ~ .slider-controls .slider-controls-item--3::before {
-  content: "";
-  position: absolute;
-  top: 358px;
-  left: 755px;
-  z-index: 2;
-  width: 4px;
-  height: 4px;
-  margin: -4px;
-  background-color: inherit;
-  border: 2px solid #c1c1c1;
-  border-radius: 50%;
-} */
 
