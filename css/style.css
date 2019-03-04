@@ -150,6 +150,7 @@ a {
   font-size: 16px;
   letter-spacing: 0;
   line-height: 24px;
+  width: 270px;
 }
 .about-us p:first-child {
   text-transform: none;
@@ -219,13 +220,13 @@ h1 {
   color: #ffffff;
   background: #FB565A;
   width: 200px;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-top: 15px;
+  padding-bottom: 12px;
   border-radius: 3%;
   text-align: center;
   margin-left: 80px;
   margin-right: 80px;
-  margin-bottom: 43px;
+  margin-bottom: 42px;
 }
 .button:hover {
   background: #E74246;
@@ -240,6 +241,9 @@ h1 {
   letter-spacing: 0;
   text-align: center;
   line-height: 18px;
+  width: 200px;
+  padding-left: 80px;
+  margin-bottom: 10px;
 }
 /* сетка */
 .main-navigation {
@@ -262,11 +266,6 @@ h1 {
   padding-bottom: 7px;
 }
 .main-header {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
   width: 100%;
   background-color: #EEEEEE;
   margin: auto;
@@ -685,7 +684,7 @@ line-height: 18px;
   background-image: url("img/slide3.png");
   background-size: 759px 411px;
   background-repeat: no-repeat;
-  background-position: 430px 8px;
+  background-position: 397px 8px;
   width: 1160px;
   padding-bottom: 81px;
   display: none;
@@ -730,7 +729,7 @@ iframe {
 .slide h3 {
   font-size: 55px;
   line-height: 55px;
-  padding-top: 67px;
+  padding-top: 68px;
   padding-bottom: 26px;
   text-transform: none;
   font-weight: 500;
@@ -877,7 +876,7 @@ iframe {
   display: none;
   margin: auto;
   position: absolute;
-  top: 355px;
+  top: 389px;
 }
 .item img {
   padding-bottom: 27px;
@@ -893,7 +892,7 @@ iframe {
 }
 .product-info h3 {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 11px;
   color: #000000;
 }
 .info-table sup {
@@ -924,6 +923,75 @@ iframe {
 }
 .inner-modal {
   top: 81%;
+}
+.slider-controls {
+  position: absolute;
+}
+.slider-controls label {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slider-controls label::after {
+  content: "";
+  position: absolute;
+  top: 308px;
+  left: 794px;
+  z-index: 1;
+  width: 18px;
+  height: 18px;
+  background: #ffffff;
+  border-radius: 50%;
+} 
+#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
+#product-2:checked ~ .slider-controls .slider-controls-item--2::before,
+#product-3:checked ~ .slider-controls .slider-controls-item--3::before {
+  content: "";
+  position: absolute;
+  top: 317px;
+  left: 804px;
+  z-index: 2;
+  width: 4px;
+  height: 4px;
+  margin: -4px;
+  background-color: inherit;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
+}
+.sedona span {
+  width: 200px;
+  padding-left: 80px;
+}
+.pink span {
+  width: 235px;
+  padding-left: 64px;
+}
+.a-plus span {
+  width: 214px;
+  padding-left: 73px;
+}
+.a-plus h3 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.mishka span {
+  padding-left: 80px;
+}
+.barbershop span {
+  width: 196px;
+  padding-left: 80px;
+}
+.kvast h3 {
+  margin-top: 14px;
+  margin-bottom: 18px;
+}
+.kvast span {
+  width: 208px;
+  padding-left: 77px;
 }
 
 
