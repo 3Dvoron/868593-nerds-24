@@ -438,6 +438,9 @@ h1 {
 .filter-option li {
 vertical-align: middle;
 }
+.filter-checkbox {
+  margin-bottom: 20px;
+}
 .filter-checkbox li {
   margin-bottom: 4px;
   padding-bottom: 0px;
@@ -491,6 +494,7 @@ vertical-align: middle;
   padding-top: 19px;
   margin-bottom: 30px;
   padding-left: 10px;
+  color: #000000;
 }
 #name-form:hover,
 #email-form:hover,
@@ -501,6 +505,7 @@ vertical-align: middle;
 #email-form:focus,
 #text-form:focus {
   border: 2px solid #000000;
+  opacity: 1;
 }
 #text-form {
   width: 754px;
@@ -627,26 +632,24 @@ line-height: 18px;
   justify-content: space-between;
   border-bottom: 3px solid #EEEEEE;
   border-top: 3px solid #EEEEEE;
-  margin-bottom: 80px;
+  margin-bottom: 78px;
 }
 .partners-logo {
   display: inline-flex;
   position: relative;
   width: 1160px;
   padding: 0;
-  align-content: center;
   align-items: center;
-  justify-content: space-between;
   opacity: 0.2;
   padding-top: 45px;
   padding-bottom: 5px;
   margin: 0;
-  margin-bottom: 34px;
-  margin-right: 65px
+  margin-bottom: 32px;
 }
-.partners-logo li:first-child {
+.htmlacademy-logo {
   margin-left: 30px;
-  margin-top: 15px;
+  margin-top: 10px;
+  margin-right: 98px;
 }
 .partners-logo img {
   align-content: center;
@@ -665,7 +668,7 @@ line-height: 18px;
 }
 .slide:nth-child(1) {
   width: 1160px;
-  background-image: url("img/slide1.png");
+  background-image: url("../img/slide1.png");
   background-size: 698px 413px;
   background-repeat: no-repeat;
   background-position: 430px 8px;
@@ -674,7 +677,7 @@ line-height: 18px;
 }
 .slide:nth-child(2) {
   width: 1160px;
-  background-image: url("img/slide2.png");
+  background-image: url("../img/slide2.png");
   background-size: 663px 430px;
   background-repeat: no-repeat;
   background-position: 430px 8px;
@@ -682,7 +685,7 @@ line-height: 18px;
   display: none;
 }
 .slide:nth-child(3) {
-  background-image: url("img/slide3.png");
+  background-image: url("../img/slide3.png");
   background-size: 759px 411px;
   background-repeat: no-repeat;
   background-position: 397px 8px;
@@ -795,7 +798,7 @@ iframe {
   text-align: start;
 }
 .decoration-filter {
-  background-image: url("img/checkbox-off.png");
+  background-image: url("../img/checkbox-off.png");
   background-repeat: no-repeat;
   background-position: left;
   display: inline-block;
@@ -822,22 +825,22 @@ iframe {
   display: none;
 }
 #slider-filter:checked + .decoration-filter {
-  background-image: url("img/checkbox-on.png");
+  background-image: url("../img/checkbox-on.png");
 }
 #advantage-filter:checked + .decoration-filter {
-  background-image: url("img/checkbox-on.png");
+  background-image: url("../img/checkbox-on.png");
 }
 #news-filter:checked + .decoration-filter {
-  background-image: url("img/checkbox-on.png");
+  background-image: url("../img/checkbox-on.png");
 }
 #basket-filter:checked + .decoration-filter {
-  background-image: url("img/checkbox-on.png");
+  background-image: url("../img/checkbox-on.png");
 }
 #gallery-filter:checked + .decoration-filter {
-  background-image: url("img/checkbox-on.png");
+  background-image: url("../img/checkbox-on.png");
 }
 .decoration-radio {
-  background-image: url("img/radio-off.png");
+  background-image: url("../img/radio-off.png");
   opacity: 0.3;
   display: inline-block;
   background-repeat: no-repeat;
@@ -850,9 +853,6 @@ iframe {
   padding-bottom: 8px; 
   background-position: left;
 }
-.filter-group label {
-  opacity: 0.3;
-}
 .decoration-radio:hover {
   opacity: 1;
 }
@@ -860,13 +860,13 @@ iframe {
   opacity: 1;
 }
 #adaptive:checked + .decoration-radio {
-  background-image: url("img/radio-on.png");
+  background-image: url("../img/radio-on.png");
 }
 #fixed:checked + .decoration-radio {
-  background-image: url("img/radio-on.png");
+  background-image: url("../img/radio-on.png");
 }
 #rubber:checked + .decoration-radio {
-  background-image: url("img/radio-on.png");
+  background-image: url("../img/radio-on.png");
 }
 .product-info span {
   display: block;
@@ -901,16 +901,32 @@ iframe {
   top: 3px;
   font-size: 30px;
 }
-.partners-logo li::after {
+.partners-logo a::after {
   display: inline-block;
   position: absolute;
   content: "";
   background-color: #000000;
   width: 2px;
   height: 50px;
-  margin-left: 45px;
+  margin-left: 52px;
 }
-.partners-logo li:last-child::after {
+.barbershop-logo {
+  margin-right: 102px;
+}
+.barbershop-logo a::after {
+  margin-top: 21px;
+  margin-left: 42px;
+}
+.pink-logo {
+  padding-right: 124px;
+}
+.pink-logo  a::after {
+  margin-left: 55px;
+}
+.mishka-logo {
+  padding-top: 4px;
+}
+.mishka-logo a::after {
   display: none;
 }
 .filter-option label {
@@ -927,21 +943,22 @@ iframe {
 }
 .slider-controls {
   position: absolute;
+  left: 50%;
 }
 .slider-controls label {
   position: relative;
   display: inline-block;
   width: 18px;
   height: 18px;
-  padding: 8px;
+  padding: 7px;
   border-radius: 50%;
   cursor: pointer;
 }
 .slider-controls label::after {
   content: "";
   position: absolute;
-  top: 308px;
-  left: 794px;
+  top: 305px;
+  right: 59px;
   z-index: 1;
   width: 18px;
   height: 18px;
@@ -953,8 +970,8 @@ iframe {
 #product-3:checked ~ .slider-controls .slider-controls-item--3::before {
   content: "";
   position: absolute;
-  top: 317px;
-  left: 804px;
+  top: 314px;
+  right: 68px;
   z-index: 2;
   width: 4px;
   height: 4px;
@@ -997,7 +1014,7 @@ iframe {
 .filter-item {
   margin: 0;
   padding: 0;
-  margin-bottom: 57px;
+  margin-bottom: 58px;
   border: none;
 }
 
@@ -1011,15 +1028,15 @@ iframe {
   line-height: 24px;
   text-transform: uppercase;
   font-weight: 700;
-  padding-bottom: 5px;
+  padding-bottom: 4px;
 }
 
 .range-controls {
   position: relative;
   
   height: 41px;
-  margin-bottom: 15px;
-  padding-top: 39px;
+  margin-bottom: 17px;
+  padding-top: 36px;
   padding-right: 20px;
   padding-left: 20px;
   
@@ -1043,7 +1060,7 @@ iframe {
 
 .range-controls .toggle {
   position: absolute;
-  top: 31px;
+  top: 27px;
   left: 0;
   
   width: 4px;
@@ -1062,7 +1079,7 @@ iframe {
 }
 
 .range-controls .toggle-max {
-  left: 155px;
+  left: 161px;
 }
 
 .price-controls {
@@ -1115,6 +1132,13 @@ iframe {
   line-height: 18px;
   color: #000000;
   padding-right: 26px;
+  opacity: 0.3;
+}
+.sorting-item a:hover {
+  opacity: 0.6;
+}
+.sorting-item-on a {
+  opacity: 1;
 }
 .sorting-item-down  {
   width: 0;
@@ -1165,7 +1189,12 @@ iframe {
 .pages-item.pages-next a {
   width: auto;
   padding: 16px 80px;
-
   text-transform: uppercase;
 }
-
+.pages-item a:hover {
+  background: #DFDFDF;
+}
+.pages-item a:active {
+  background: #D5D5D5;
+  opacity: 0.3;
+}
