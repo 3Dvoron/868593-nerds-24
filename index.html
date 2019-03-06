@@ -10,7 +10,7 @@
   <body>
   <header class="main-header">
     <nav class="main-navigation">
-     <div class="header-logo">
+      <div class="header-logo">
         <img src="img/header-logo.png" width="160" height="67" alt="Логотип студии Нердс">
       </div>
       <ul class="site-navigation">
@@ -24,38 +24,38 @@
       </ul>
     </nav>
     <div class="slider">
-        <h2 class="visually-hidden">Преимущества</h2>
-        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
-        <div class="slider-controls">
-          <label class="slider-controls-item slider-controls-item--1" for="product-1"></label>
-          <label class="slider-controls-item slider-controls-item--2" for="product-2"></label>
-          <label class="slider-controls-item slider-controls-item--3" for="product-3"></label>
+      <h2 class="visually-hidden">Преимущества</h2>
+      <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+      <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+      <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+      <div class="slider-controls">
+        <label class="slider-controls-item slider-controls-item--1" for="product-1"></label>
+        <label class="slider-controls-item slider-controls-item--2" for="product-2"></label>
+        <label class="slider-controls-item slider-controls-item--3" for="product-3"></label>
     </div>      
-        <ul class="slides">
-          <li class="slide slide-item-1">
-            <h3>Долго, дорого,<br>скрупулезно.</h3>
-            <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
-            <a class="more-info" href="#">Узнать больше</a>
-          </li>
-          <li class="slide slide-item-2">
-            <h3>Любим математику<br> как никто другой</h3>
-            <p>Никакого креатива,только математические формулы<br> для расчета идеальных пропорций.</p>
-            <a class="more-info" href="#">Узнать больше</a>
-          </li>
-          <li class="slide slide-item-3">
-            <h3>Только ночь,<br>только хардкор</h3>
-            <p>Работать днем,как все?Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
-            <a class="more-info" href="#">Узнать больше</a>
-          </li>
-        </ul>
+    <ul class="slides">
+      <li class="slide slide-item-1">
+        <h3>Долго, дорого,<br>скрупулезно.</h3>
+        <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+        <a class="more-info" href="#">Узнать больше</a>
+      </li>
+      <li class="slide slide-item-2">
+        <h3>Любим математику<br> как никто другой</h3>
+        <p>Никакого креатива,только математические формулы<br> для расчета идеальных пропорций.</p>
+        <a class="more-info" href="#">Узнать больше</a>
+      </li>
+      <li class="slide slide-item-3">
+        <h3>Только ночь,<br>только хардкор</h3>
+        <p>Работать днем,как все?Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
+        <a class="more-info" href="#">Узнать больше</a>
+      </li>
+    </ul>
   </header>
   <main class="container">
     <h1 class="visually-hidden">Дизайн-студия Нердс</h1>
     <div class="type-work-column">
-    <section class="type-of-work">
-      <h2 class="visually-hidden">Виды работ</h2>
+      <section class="type-of-work">
+        <h2 class="visually-hidden">Виды работ</h2>
         <ul class="work-list">
           <li class="work-item">
             <img src="img/illustration-1.jpg" width="300" height="146" alt="слайд">
@@ -76,14 +76,13 @@
             <a href="order.html">Заказать</a>
           </li>
         </ul>
-    </section>
+      </section>
     </div>
     <section class="about-us">
       <div class="info-about-us">
         <p class="slogan">Мы — маленькая, но гордая
           дизайн-студия из Краснодара. 
         </p>
-
         <p class="no-creative">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
           превыше креатива. Работаем не покладая рук, как роботы.
         </p> 
@@ -125,15 +124,15 @@
         <button class="modal-close" type="button"><img src="img/modal-close.png" width="21" height="21" alt="Закрыть"></button>
         <p class="form-field">
           <label for="name-form">Ваше Имя:</label>
-          <input id="name-form" type="text" name="name-form" placeholder="Имя фамилия">
+          <input class="name-form" id="name-form" type="text" name="name-form" placeholder="Имя фамилия">
         </p>
         <p class="form-field">
           <label for="email-form">Ваш E-mail:</label>
-          <input id="email-form" type="text" name="email-form" placeholder="email@example.com">
+          <input class="email-form" id="email-form" type="text" name="email-form" placeholder="email@example.com">
         </p>
         <p class="form-field">
           <label for="text-form">текст письма:</label>
-          <input id="text-form" type="text" name="text-form" placeholder="В свободной форме">
+          <input class="text-form" id="text-form" type="text" name="text-form" placeholder="В свободной форме">
         </p>
         <button class="button-submit" type="submit">Отправить</button>
       </form>
@@ -141,13 +140,14 @@
   </main>
   <footer class="footer">
     <div class="address">
-      <p><span>Nerds design studio</span>
+      <p>
+        <span>Nerds design studio</span>
         <span>19186, Санкт-Петербург, 
         ул.Б.Конюшенная,д. 19/8</span>
         <span>тел.+7 (812) 275-75-75</span>
         <a class="open-popap" href="#">Напишите нам</a>
-        </p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003174!2d30.320858716192735!3d59.93871916905406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1551349519217"></iframe>
+      </p>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003174!2d30.320858716192735!3d59.93871916905406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1551349519217"></iframe>
     </div>
     <div class="footer-container">
       <ul class="social-links">
@@ -161,18 +161,6 @@
       </p>
     </div>
   </footer>
-  <script>
-    var write = document.querySelector(".open-popap");
-    var modal = document.querySelector(".write-us");
-    write.addEventListener("click",function (evt) {
-      evt.preventDefault();
-      modal.classList.add("modal-show");
-    });
-    var close = document.querySelector(".modal-close");
-    close.addEventListener("click", function (evt){
-      evt.preventDefault();
-      modal.classList.remove("modal-show");
-    });
-  </script>
+  <script src="js/features.js"></script>
   </body>
 </html>

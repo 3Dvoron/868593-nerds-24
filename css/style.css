@@ -1,5 +1,4 @@
 body {
-  margin: auto;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
@@ -10,11 +9,22 @@ body {
   background-color: #ffffff;
   background-position: top center;
   background-repeat: no-repeat;
+  min-width: 1180px;
 }
-li {
+.site-navigation li,
+.user-navigation li,
+.slides li,
+.work-list li,
+.advantages-list li,
+.partners-logo li,
+.social-links li,
+.filter-list li,
+.sorting-list li,
+.catalog-list li,
+.pages-list li {
   list-style: none;
 }
-nav {
+.main-navigation {
   font-size: 16px;
   color: #000000;
   letter-spacing: 0;
@@ -25,6 +35,7 @@ nav {
 a {
   text-decoration: none;
 }
+/* header */
 .main-navigation a {
   color: #000000;
   background-color: #EEEEEE;
@@ -50,6 +61,7 @@ a {
   list-style: none;
   padding-left: 2px;
 }
+/* Слайдер */
 .slide a {
   text-align: center;
   color: #ffffff;
@@ -66,57 +78,59 @@ a {
   background-color: #D7373B;
   opacity: 0.3;
 }
-.type-of-work a {
+/* блок типы работ */
+.work-list a {
   display: inline-block;
+  vertical-align: top;
   padding: 17px;
   padding-bottom: 17px;
 }
-.type-of-work a,
-.type-of-work li:first-child a {
+.work-list a,
+.work-item:first-child a {
   color: #ffffff;
   background-color: #FB565A;
 }
-.type-of-work a,
-.type-of-work li:first-child a:hover {
+.work-list a,
+.work-item:first-child a:hover {
   color: #ffffff;
   background-color: #E74246;
 }
-.type-of-work a,
-.type-of-work li:first-child a:active {
+.work-list a,
+.work-item:first-child a:active {
   color: #ffffff;
   background-color: #D7373B;
 }
-.type-of-work a,
-.type-of-work li:nth-child(2) a {
+.work-list a,
+.work-item:nth-child(2) a {
   color: #ffffff;
   background-color: #00CA74;
 }
-.type-of-work a,
-.type-of-work li:nth-child(2) a:hover {
+.work-list a,
+.work-item:nth-child(2) a:hover {
   color: #ffffff;
   background-color: #00BC6C;
 }
-.type-of-work a,
-.type-of-work li:nth-child(2) a:active {
+.work-list a,
+.work-item:nth-child(2) a:active {
   color: #ffffff;
   background-color: #00AA62;
 }
-.type-of-work a,
-.type-of-work li:last-child a {
+.work-list a,
+.work-item:last-child a {
   color: #ffffff;
   background-color: #EFC84A;
 }
-.type-of-work a,
-.type-of-work li:last-child a:hover {
+.work-list a,
+.work-item:last-child a:hover {
   color: #ffffff;
   background-color: #EAB534;
 }
-.type-of-work a,
-.type-of-work li:last-child a:active {
+.work-list a,
+.work-item:last-child a:active {
   color: #ffffff;
   background-color: #E5A722;
 }
-.type-of-work a:active{
+.work-list a:active{
   opacity: 0.3;
 }
 .social-button a {
@@ -454,15 +468,13 @@ vertical-align: middle;
 }
 .write-us {
   text-transform: none;
-  position: absolute;
-  top: 30%;
-  left: 50%;
+  position: fixed;
+  top: 45%;
+  left: 24%;
   z-index: 2;
   padding-left: 100px;
   padding-right: 100px;
   margin: auto;
-  margin-left: -480px;
-  margin-top: 1300px;
   background-color: #ffffff;
   width: 760px;
   font-weight: 700;
@@ -485,8 +497,8 @@ vertical-align: middle;
   flex-wrap: wrap;
   margin: 0;
 }
-#name-form,
-#email-form {
+.name-form,
+.email-form {
   width: 354px;
   background: #FFFFFF;
   border: 2px solid #D7DCDE;
@@ -496,18 +508,18 @@ vertical-align: middle;
   padding-left: 10px;
   color: #000000;
 }
-#name-form:hover,
-#email-form:hover,
-#text-form:hover {
+.name-form:hover,
+.email-form:hover,
+.text-form:hover {
   border: 2px solid #B4B9BB;
 }
-#name-form:focus,
-#email-form:focus,
-#text-form:focus {
+.name-form:focus,
+.email-form:focus,
+.text-form:focus {
   border: 2px solid #000000;
   opacity: 1;
 }
-#text-form {
+.text-form {
   width: 754px;
   resize: none;
   border: 2px solid #D7DCDE;
@@ -632,10 +644,11 @@ line-height: 18px;
   justify-content: space-between;
   border-bottom: 3px solid #EEEEEE;
   border-top: 3px solid #EEEEEE;
-  margin-bottom: 78px;
+  margin-bottom: 81px;
 }
 .partners-logo {
   display: inline-flex;
+  vertical-align: top;
   position: relative;
   width: 1160px;
   padding: 0;
@@ -655,9 +668,17 @@ line-height: 18px;
   align-content: center;
   justify-content: space-between;
 }
-/* спрятал попап */
+@keyframes modal-animation {
+  0% { transform: translateY(-2000px); }
+  70% { transform: translateY(30px); }
+  90% { transform: translateY(-10px); }
+  100% { transform:  translateY(0); }
+}
+/* показать попап */
 .modal-show {
   display: flex;
+  animation-name: modal-animation;
+  animation-duration: 0.6s;
 }
 /*  */
 .slider {
@@ -712,7 +733,7 @@ line-height: 18px;
 .address span:first-child {
   text-transform: uppercase;
 }
-iframe {
+.map {
   width: 100%;
   height: 413px;
   margin: auto;
@@ -802,6 +823,7 @@ iframe {
   background-repeat: no-repeat;
   background-position: left;
   display: inline-block;
+  vertical-align: top;
   width: 28px;
   height: 28px;
   opacity: 0.3;
@@ -843,6 +865,7 @@ iframe {
   background-image: url("../img/radio-off.png");
   opacity: 0.3;
   display: inline-block;
+  vertical-align: top;
   background-repeat: no-repeat;
   width: 28px;
   height: 28px;
@@ -903,6 +926,7 @@ iframe {
 }
 .partners-logo a::after {
   display: inline-block;
+  vertical-align: top;
   position: absolute;
   content: "";
   background-color: #000000;
@@ -939,7 +963,7 @@ iframe {
   margin-bottom: 35px;
 }
 .inner-modal {
-  top: 81%;
+  top: %;
 }
 .slider-controls {
   position: absolute;
@@ -948,6 +972,7 @@ iframe {
 .slider-controls label {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   width: 18px;
   height: 18px;
   padding: 7px;
@@ -1033,21 +1058,17 @@ iframe {
 
 .range-controls {
   position: relative;
-  
   height: 41px;
   margin-bottom: 17px;
   padding-top: 36px;
   padding-right: 20px;
   padding-left: 20px;
-  
   background-color: #f1f1f1;
-  
   border-radius: 5px;
 }
 
 .range-controls .scale {
   height: 2px;
-
   background: #d7dcde;
 }
 
@@ -1062,11 +1083,9 @@ iframe {
   position: absolute;
   top: 27px;
   left: 0;
-  
   width: 4px;
   height: 4px;
   padding: 0;
-
   border: 8px solid #ffffff;
   background-color: #ababab;
   box-shadow: 0 2px 1px 0 #cfcfcf;
@@ -1089,7 +1108,7 @@ iframe {
 .price-controls label {
   display: inline-block;
   width: 50%;
-  
+  vertical-align: top;
   font-size: 16px;
   text-transform: uppercase;
 }
@@ -1098,12 +1117,10 @@ iframe {
   width: 60px;
   padding: 8px 10px;
   margin-left: 10px;
-  
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   text-align: center;
   color: #283136;
-  
   border: none;
   border-radius: 5px;
   background: #f1f1f1;
@@ -1114,12 +1131,14 @@ iframe {
 }
 .sorting {
   display: inline-flex;
+  vertical-align: top;
   padding-left: 140px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 .sorting-list {
   display: inline-flex;
+  vertical-align: top;
   margin-top: 12px;
 }
 .sorting h2 {
