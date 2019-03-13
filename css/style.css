@@ -996,7 +996,7 @@ h1 {
 #gallery-filter:checked + .decoration-filter {
   background-image: url("../img/checkbox-on.png");
 }
-.decoration-radio {
+.grid-radio + label::before {
   background-image: url("../img/radio-off.png");
   opacity: 0.3;
   display: inline-block;
