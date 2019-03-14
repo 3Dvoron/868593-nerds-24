@@ -5,13 +5,13 @@
     <title>Каталог</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
   <header class="main-header inner">
     <nav class="main-navigation">
       <a href="index.html">
-        <img class="header-logo" src="img/header-logo.png" width="160" height="67" alt="Логотип студии Нердс">
+        <img class="header-logo" src="img/header-logo.svg" width="160" height="67" alt="Логотип студии Нердс">
       </a>
       <ul class="site-navigation">
         <li><a href="index.html">Студия</a></li>
@@ -20,7 +20,7 @@
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
       <ul class="user-navigation">
-        <li class="basket"><img src="img/basket.png" width="15" height="15" alt="Корзина"><a href="#">Корзина</a></li>
+        <li class="basket"><img src="img/basket.svg" width="15" height="15" alt="Корзина"><a href="#">Корзина</a></li>
       </ul>
       <h1>Магазин готовых шаблонов</h1>
     </nav>
@@ -51,17 +51,17 @@
             <ul class="filter-list">
               <li class="filter-option">
                 <input type="radio" class="grid-radio" name="grid" id="adaptive" checked>
-                <label class="decoration-radio"></label>
+                <label for="adaptive" class="decoration-radio"></label>
                 <label for="adaptive" tabindex="0">Адаптивная</label>
               </li>
               <li class="filter-option">
                 <input type="radio" name="grid" id="fixed">
-                <label class="decoration-radio"></label>
+                <label for="fixed" class="decoration-radio"></label>
                 <label for="fixed" tabindex="0">Фиксированная</label>
               </li>
               <li class="filter-option">
                 <input type="radio" name="grid" id="rubber">
-                <label class="decoration-radio"></label>
+                <label for="rubber" class="decoration-radio"></label>
                 <label for="rubber" tabindex="0">Резиновая</label>
               </li>
             </ul>
@@ -69,24 +69,29 @@
           <fieldset class="filter-group filter-checkbox">
             <legend>особенности:</legend>
             <ul class="filter-list">
-              <li class="filter-option">
+              <li class="filter-option" >
                 <input type="checkbox" name="slider-filter" id="slider-filter" checked>
+                <label for="slider-filter" class="decoration-filter"></label>
                 <label for="slider-filter" tabindex="0">Слайдер</label>
               </li>
               <li class="filter-option">
                 <input type="checkbox" name="advantage-filter" id="advantage-filter">
+                <label for="advantage-filter" class="decoration-filter"></label>
                 <label for="advantage-filter" tabindex="0">Блок преимуществ</label>
               </li>
               <li class="filter-option">
                 <input type="checkbox" name="news-filter" id="news-filter" checked>
+                <label for="news-filter" class="decoration-filter"></label>
                 <label for="news-filter" tabindex="0">Новости</label>
               </li>
               <li class="filter-option">
                 <input type="checkbox" name="gallery-filter" id="gallery-filter">
+                <label for="gallery-filter" class="decoration-filter"></label>
                 <label for="gallery-filter" tabindex="0">Галерея</label>
               </li>
               <li class="filter-option">
                 <input type="checkbox" name="basket-filter" id="basket-filter">
+                <label for="basket-filter" class="decoration-filter"></label>
                 <label for="basket-filter" tabindex="0">Корзина</label>
               </li>
             </ul>
@@ -102,8 +107,8 @@
             <li class="sorting-item sorting-item-on"><a>По цене</a></li>
             <li class="sorting-item no-active"><a href="#">По типу</a></li>
             <li class="sorting-item no-active"><a href="#">По названию</a></li>
-            <li class="sorting-item-up sorting-item-on"><a></a></li>
-            <li class="sorting-item-down sorting-item-off"><a href="#"></a></li>
+            <li class="sorting-item-up sorting-item-on"><a><span class="visually-hidden">сортировка по убыванию</span></a></li>
+            <li class="sorting-item-down sorting-item-off"><a href="#"><span class="visually-hidden">сортировка по возрастанию</span></a></li>
           </ul>
         </section>
         <ul class="catalog-list">
@@ -246,7 +251,7 @@
       <section class="modal-write-us">
         <form class="write-us inner-modal" method="POST">
           <h2 class="modal-title">Напишите нам</h2>
-          <button class="modal-close" type="button"><img src="img/modal-close.png" width="21" height="21" alt="Закрыть"></button>
+          <button class="modal-close" type="button"><img src="img/modal-close.svg" width="21" height="21" alt="Закрыть"></button>
           <p class="form-field">
             <label for="name-form">Ваше имя:</label>
             <input class="name-form" id="name-form" type="text" name="name-form" placeholder="Имя фамилия">
@@ -268,9 +273,9 @@
     <div class="address">
       <a href="https://goo.gl/maps/b3i5v5Diggp" class="map-img" ></a>
       <p><span>Nerds design studio</span>
-         <span>191186,Санкт-Петербург, 
+         <span>191186, Санкт-Петербург, 
             ул.Б.Конюшенная,д. 19/8</span>
-          <span>тел.+7(812) 275-75-75</span>
+          <span>тел. +7(812) 275-75-75</span>
         <a class="open-popap" href="#">Напишите нам.</a>
         </p>
         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003174!2d30.320858716192735!3d59.93871916905406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1551349519217"></iframe>

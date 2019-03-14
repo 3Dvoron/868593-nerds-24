@@ -152,6 +152,7 @@ a {
   color: #000000;
   letter-spacing: 0;
   line-height: 22px;
+  margin-top: 29px;
   margin-bottom: 20px;
 }
 .work-item p {
@@ -180,7 +181,7 @@ a {
   color: #283136;
   letter-spacing: 0;
   line-height: 24px;
-  margin-top: 31px;
+  margin-top: 34px;
   margin-bottom: 19px;
 }
 .sales span:first-child {
@@ -404,7 +405,7 @@ h1 {
   margin: 0;
   margin-top: 28px;
   margin-left: 140px;
-  margin-bottom: 13px;
+  margin-bottom: 14px;
 }
 .catalog-item {
   width: 360px;
@@ -415,7 +416,7 @@ h1 {
 .catalog {
   width: 900px;
   margin: auto;
-  margin-bottom: 22px;
+  margin-bottom: 42px;
 }
 .social-links {
   display: -webkit-box;
@@ -520,9 +521,9 @@ h1 {
 .write-us {
   text-transform: none;
   position: fixed;
-  top: 18%;
-  left: 16%;
-  z-index: 5;
+  top: 35%;
+  left: 20%;
+  z-index: 7;
   padding-left: 100px;
   padding-right: 100px;
   margin: auto;
@@ -664,8 +665,8 @@ h1 {
 .how-long-we-work {
   width: 360px;
   font-weight: 700;
-  margin-top: 27px;
-  margin-left: 55px;
+  margin-top: 29px;
+  margin-left: 56px;
 }
 .advantages-list {
   width: 660px;
@@ -713,7 +714,7 @@ h1 {
 }
 .info-table td {
   padding-top: 5px;
-  padding-bottom: 30px;
+  padding-bottom: 31px;
   padding-right: 23px;
   text-transform: none;
   position: relative;
@@ -722,7 +723,6 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -734,6 +734,7 @@ h1 {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  flex-wrap: wrap;
   vertical-align: top;
   position: relative;
   width: 1160px;
@@ -793,7 +794,6 @@ h1 {
   width: 100%;
   padding: 0;
   margin: auto;
-
 }
 .slide:nth-child(1) {
   width: 1160px;
@@ -835,13 +835,11 @@ h1 {
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1440px 416px;
-
+  background-size: 1440px 413px;
 }
 .map-img {
   display: block;
   position: absolute;
-  z-index: 1;
   width: 1440px;
   height: 413px;
 }
@@ -849,8 +847,8 @@ h1 {
   position: absolute;
   width: 219px;
   background-color: #ffffff;
-  margin-top: 72px;
-  z-index: 5;
+  margin-top: 55px;
+  z-index: 6;
   left: 50%;
   margin-left: -581px;
 }
@@ -864,7 +862,7 @@ h1 {
 }
 .map {
   position: absolute;
-  z-index: 3;
+  z-index: 2;
   width: 100%;
   height: 413px;
   margin: auto;
@@ -904,7 +902,7 @@ h1 {
 .open-popap {
   display: block;
   width: 220px;
-  padding-top: 12px;
+  padding-top: 13px;
   padding-bottom: 12px;
   background-color: #fb565a;
   border-radius: 3%;
@@ -916,7 +914,7 @@ h1 {
   margin-left: 15px;
 }
 .address p {
-  padding-top: 49px;
+  padding-top: 48px;
   padding-left: 36px;
   padding-right: 63px;
 }
@@ -946,12 +944,12 @@ h1 {
   color: #666666;
   letter-spacing: 0;
   line-height: 18px;
-  margin-bottom: 35px;
-  margin-left: 15px;
+  margin-bottom: 37px;
+  margin-left: 17px;
   text-align: start;
 }
 .decoration-filter {
-  background-image: url("../img/checkbox-off.png");
+  background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: left;
   display: inline-block;
@@ -982,22 +980,22 @@ h1 {
   display: none;
 }
 #slider-filter:checked + .decoration-filter {
-  background-image: url("../img/checkbox-on.png");
+  background-image: url("../img/checkbox-on.svg");
 }
 #advantage-filter:checked + .decoration-filter {
-  background-image: url("../img/checkbox-on.png");
+  background-image: url("../img/checkbox-on.svg");
 }
 #news-filter:checked + .decoration-filter {
-  background-image: url("../img/checkbox-on.png");
+  background-image: url("../img/checkbox-on.svg");
 }
 #basket-filter:checked + .decoration-filter {
-  background-image: url("../img/checkbox-on.png");
+  background-image: url("../img/checkbox-on.svg");
 }
 #gallery-filter:checked + .decoration-filter {
-  background-image: url("../img/checkbox-on.png");
+  background-image: url("../img/checkbox-on.svg");
 }
 .decoration-radio {
-  background-image: url("../img/radio-off.png");
+  background-image: url("../img/radio-off.svg");
   opacity: 0.3;
   display: inline-block;
   vertical-align: top;
@@ -1021,13 +1019,13 @@ h1 {
   opacity: 1;
 }
 #adaptive:checked + .decoration-radio {
-  background-image: url("../img/radio-on.png");
+  background-image: url("../img/radio-on.svg");
 }
 #fixed:checked + .decoration-radio {
-  background-image: url("../img/radio-on.png");
+  background-image: url("../img/radio-on.svg");
 }
 #rubber:checked + .decoration-radio {
-  background-image: url("../img/radio-on.png");
+  background-image: url("../img/radio-on.svg");
 }
 .product-info span {
   display: block;
@@ -1330,7 +1328,7 @@ h1 {
   display: -ms-inline-flexbox;
   display: inline-flex;
   flex-wrap: wrap;
-  margin-left: 81px;
+  margin-left: 91px;
 }
 .pages-item a {
   display: block;
@@ -1364,6 +1362,7 @@ h1 {
 .pages-item a:active {
   background: #D5D5D5;
   opacity: 0.3;
+}
 .illustration-1 {
   width: 300px;
   height: 146px;
@@ -1381,4 +1380,7 @@ h1 {
   height: 146px;
   background-image: url("../img/illustration-3.jpg");
   background-repeat: no-repeat;
+}
+.show-map {
+  z-index: 5;
 }
